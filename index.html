@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lawkward Files by Vihaan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Roboto', sans-serif; }
+        h1, h2, h3 { font-family: 'Poppins', sans-serif; }
+        .story-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .story-card:hover { transform: scale(1.05); box-shadow: 0 10px 15px rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="bg-teal-600 py-12 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">The Lawkward Files</h1>
+            <p class="text-lg md:text-xl mb-6">By Vihaan – Aiming to Be the Youngest Legal Satire Writer in the India Book of Records</p>
+            <a href="#stories" class="bg-white text-teal-600 px-6 py-3 rounded-full font-semibold hover:bg-teal-100">Explore the Stories</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <section class="mb-12 text-center">
+            <h2 class="text-3xl font-bold mb-4">About The Lawkward Files</h2>
+            <p class="text-gray-300 max-w-2xl mx-auto">
+                Dive into <em>The Lawkward Files</em>, a rollicking 15-story legal satire series that’s madder than a Delhi traffic jam during Diwali! Every set of five stories dances to its own quirky theme, serving up a spicy mix of Indian chaos, courtroom hungama, and objects behaving like filmi villains. The first five tales, the <strong>Quirky Courtroom Chronicles</strong>, unfold in the Ludicrous Bench, where small-town judges tangle with naughty clocks, thieving sandals, and rebellious fans, poking fun at India’s love for drama over chai. Stories 6 to 10, the <strong>Corporate Court Capers</strong>, shift to the glitzy Gilded Gavel Court, roasting startup mania as pens plot espionage, laptops stage coups, and coffee machines brew sabotage, all with a side of X trend tamasha. Stories 11 to 14, the <strong>Village Verdict Vagaries</strong>, bring rural madness to the Panchayat of Peculiarities, where wells trespass, mango trees slander, and tractors mutiny, capturing the gossip-fueled heart of India’s villages. Then comes the grand finale, story 15, <strong>The Great Guffaw Gambit</strong>, a 4,000-word explosion in the Supreme Court of Silliness, where every character, from buffalo-obsessed judges to lassi-sipping lawyers, and every object, from ticking clocks to creaking branches, collides in a riotous battle over a bonkers laughter ban, tying all themes into a masala-packed climax that’s pure India!
+            </p>
+        </section>
+
+        <section id="stories">
+            <h2 class="text-3xl font-bold mb-8 text-center">The Stories</h2>
+            <div id="story-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 Vihaan. All rights reserved.</p>
+            <p class="text-gray-400">Crafted with chai-fueled creativity.</p>
+        </div>
+    </footer>
+
+    <script>
+        const stories = [
+            {
+                title: "The Clock’s Perjury Plot",
+                summary: "A clock is tried for lying about time, disrupting a village festival.",
+                fileUrl: "https://raw.githubusercontent.com/VihaanToTheRescue/The-Lawkward-Files/main/stories/clock_perjury.pdf",
+                timestamp: "2025-05-06"
+            },
+            {
+                title: "The Sandal’s Sticky Theft",
+                summary: "A sandal is accused of stealing a villager’s prized slipper.",
+                fileUrl: "https://raw.githubusercontent.com/VihaanToTheRescue/The-Lawkward-Files/main/stories/sandal_theft.pdf",
+                timestamp: "2025-05-08"
+            },
+            {
+                title: "The Fan’s Defiant Dissent",
+                summary: "A ceiling fan is charged with stirring rebellion in a courtroom.",
+                fileUrl: "https://raw.githubusercontent.com/VihaanToTheRescue/The-Lawkward-Files/main/stories/fan_dissent.pdf",
+                timestamp: "2025-05-10"
+            },
+            {
+                title: "The Cart’s Extortion Escapade",
+                summary: "A cart wheel is tried for extorting a farmer’s crops.",
+                fileUrl: "https://raw.githubusercontent.com/VihaanToTheRescue/The-Lawkward-Files/main/stories/cart_extortion.pdf",
+                timestamp: "2025-05-12"
+            },
+            {
+                title: "The Lamp’s Libelous Glow",
+                summary: "A lamp is accused of casting scandalous shadows.",
+                fileUrl: "https://raw.githubusercontent.com/VihaanToTheRescue/The-Lawkward-Files/main/stories/lamp_libel.pdf",
+                timestamp: "2025-05-14"
+            },
+            {
+                title: "The Pen’s Espionage Ploy",
+                summary: "A pen is charged with leaking corporate secrets.",
+                fileUrl: "https://raw.githubusercontent.com/VihaanToTheRescue/The-Lawkward-Files/main/stories/pen_espionage.pdf",
+                timestamp: "2025-05-16"
+            },
+            {
+                title: "The Laptop’s Corporate Coup",
+                summary: "A laptop is tried for plotting a startup takeover.",
+                fileUrl: "https://raw.githubusercontent.com/VihaanToTheRescue/The-Lawkward-Files/main/stories/laptop_coup.pdf",
+                timestamp: "2025-05-18"
+            },
+            {
+                title: "The Coffee Machine’s Sabotage Scheme",
+                summary: "A coffee machine is accused of brewing office chaos.",
+                fileUrl: "https://raw.githubusercontent.com/VihaanToTheRescue/The-Lawkward-Files/main/stories/coffee_sabotage.pdf",
+                timestamp: "2025-05-20"
+            },
+            {
+                title: "The Projector’s Framing Fiasco",
+                summary: "A projector is charged with framing an innocent intern.",
+                fileUrl: "https://raw.githubusercontent.com/VihaanToTheRescue/The-Lawkward-Files/main/stories/projector_framing.pdf",
+                timestamp: "2025-05-22"
+            },
+            {
+                title: "The App Icon’s Identity Theft",
+                summary: "An app icon is tried for stealing a startup’s brand.",
+                fileUrl: "https://raw.githubusercontent.com/VihaanToTheRescue/The-Lawkward-Files/main/stories/app_identity.pdf",
+                timestamp: "2025-05-24"
+            },
+            {
+                title: "The Well’s Watery Trespass",
+                summary: "A well is tried for stealing water from a rival well.",
+                fileUrl: "https://raw.githubusercontent.com/VihaanToTheRescue/The-Lawkward-Files/main/stories/well_trespass.pdf",
+                timestamp: "2025-05-26"
+            },
+            {
+                title: "The Mango Tree’s Slanderous Shade",
+                summary: "A mango tree is accused of spreading lies about a farmer’s honor.",
+                fileUrl: "https://raw.githubusercontent.com/VihaanToTheRescue/The-Lawkward-Files/main/stories/mango_slander.pdf",
+                timestamp: "2025-05-27"
+            },
+            {
+                title: "The Tractor’s Rebellious Roar",
+                summary: "A tractor is tried for refusing to plow a farmer’s fields.",
+                fileUrl: "https://raw.githubusercontent.com/VihaanToTheRescue/The-Lawkward-Files/main/stories/tractor_mutiny.pdf",
+                timestamp: "2025-05-28"
+            },
+            {
+                title: "The Banyan Branch’s Vandalous Bend",
+                summary: "A banyan branch is accused of tripping festival dancers.",
+                fileUrl: "https://raw.githubusercontent.com/VihaanToTheRescue/The-Lawkward-Files/main/stories/branch_vandalism.pdf",
+                timestamp: "2025-05-29"
+            },
+            {
+                title: "The Great Guffaw Gambit",
+                summary: "All objects and characters clash over a law banning laughter.",
+                fileUrl: "https://raw.githubusercontent.com/VihaanToTheRescue/The-Lawkward-Files/main/stories/guffaw_gambit.pdf",
+                timestamp: "2025-05-30"
+            }
+        ];
+
+        function loadStories() {
+            const storyList = document.getElementById('story-list');
+            stories.forEach(story => {
+                const storyCard = document.createElement('div');
+                storyCard.className = 'story-card bg-gray-800 p-6 rounded-lg';
+                storyCard.innerHTML = `
+                    <h3 class="text-xl font-bold mb-2 text-teal-400">${story.title}</h3>
+                    <p class="text-gray-300 mb-2">${story.summary}</p>
+                    <p class="text-sm text-gray-500 mb-4">Published on ${new Date(story.timestamp).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</p>
+                    <div class="flex space-x-4">
+                        <a href="${story.fileUrl}" class="text-teal-400 hover:text-teal-300 font-semibold" target="_blank">Read Story</a>
+                    </div>
+                `;
+                storyList.appendChild(storyCard);
+            });
+        }
+
+        window.onload = loadStories;
+    </script>
+</body>
+</html>
