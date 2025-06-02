@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1f2937;
+    color: #ffffff;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #0d9488;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffffff;
+    color: #0d9488;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: #e0f2fe;
+}
+
+main {
+    padding: 40px 0;
+}
+
+.about {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #d1d5db;
+}
+
+#stories h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.story-card {
+    background-color: #374151;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+
+.story-card h3 {
+    font-size: 1.25rem;
+    color: #2dd4bf;
+    margin-bottom: 10px;
+}
+
+.story-card p {
+    color: #d1d5db;
+    margin-bottom: 10px;
+}
+
+.story-card .date {
+    font-size: 0.875rem;
+    color: #9ca3af;
+    margin-bottom: 15px;
+}
+
+.story-card a {
+    color: #2dd4bf;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.story-card a:hover {
+    color: #5eead4;
+}
+
+footer {
+    background-color: #1f2937;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #9ca3af;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    .story-grid {
+        grid-template-columns: 1fr;
+    }
+    .about h2, #stories h2 {
+        font-size: 1.5rem;
+    }
+}
